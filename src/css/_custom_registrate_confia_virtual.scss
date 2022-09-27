@@ -1,0 +1,71 @@
+#sitio-web {
+    .content-pad {
+        .wrapper-registro-cvirtual {
+            padding-right:30px;
+            padding-left:30px;
+            background-position:top center;
+            background-image: url(../images/bg-serv-cliente.jpg);
+            background-repeat: no-repeat;
+            height:805px;
+            .registro-cvirtual-bloque-contenido {
+                padding-top:388px;
+                .registro-cvirtual-btn-empresas {
+                    padding-top: 22px ;
+                    padding-bottom: 22px ;
+                }
+            }
+            .registro-cvirtual-bloque-pie {
+                padding-top:70px;
+                h3 {
+                    color: #fff;
+                }
+                ul {
+                    color: #fff;
+                    padding-left:125px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    #sitio-web {
+        .content-pad {
+            .wrapper-registro-cvirtual {
+                padding-right:30px;
+                padding-left:30px;
+                background-position:top center;
+                background-image: url(../images/bg-serv-cliente-movil.jpg);
+                background-repeat: no-repeat;
+                height: auto;
+                background-size:contain;
+                background-color: #0060AC;
+               .registro-cvirtual-bloque-contenido {
+                   padding:260px 0 20px;
+                   color: #fff;
+                   h2,h3 {
+                       color: #fff;
+                    }
+                   .registro-cvirtual-btn-empresas {
+                    padding-top: 12px ;
+                    padding-bottom: 12px ;
+                }
+                   
+               }
+                .registro-cvirtual-bloque-pie {
+                    padding-top:0;
+                    background-color:#0060AC;
+                    color: #fff;
+                    h3 {
+                        color: #fff;
+                    }
+                    ul {
+                        color: #fff;
+                        padding-left:20px;
+                    }
+                }
+            }
+        }
+    }
+}

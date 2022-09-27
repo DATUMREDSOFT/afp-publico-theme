@@ -1,0 +1,58 @@
+#sitio-web {
+    #modalAyudaConfia {
+        .modal-body {
+            background-color: #6d767f;
+            background-image: url(../images/logo-confia-ayuda.png);
+            background-position: bottom left;
+            background-repeat: no-repeat;
+        }
+        .nav-stacked {
+            float:left;
+            width:29.5%;
+            li {
+                a {
+                    background-color: #6d767f;
+                    color: #fff;
+                    border-bottom: solid 1px darken(#6d767f,10%);
+                    &:visited {
+                        color: #fff;
+                    }
+                    &:hover {
+                        background-color: darken(#6d767f,15%);
+                    }
+                }
+            };
+            li.active.tab-selected {
+                a {
+                    background-color: darken(#6d767f,15%);
+                    color: #fff;
+                }
+            }
+        }
+        div.tab-content {
+            float:left;
+            width:70.5%
+        }
+        
+    }
+}
+
+@media(max-width:767.98px){
+    #sitio-web {
+        #modalAyudaConfia {
+            .modal-body {
+                background-color: #6d767f;
+                background-image: none;
+            }
+            .nav-stacked {
+                float:none;
+                width:100%;
+            }
+            div.tab-content {
+                float:none;
+                width:100%;
+                min-height:430px;
+            }
+        }
+    }
+}

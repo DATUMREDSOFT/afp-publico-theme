@@ -1,0 +1,95 @@
+.portlet-decorate {
+	.portlet-content {
+		background: $portlet-decorate-bg;
+		border-color: $portlet-decorate-border-color;
+		border-style: $portlet-decorate-border-style;
+		border-width: $portlet-decorate-border-width;
+		word-wrap: break-word;
+	}
+}
+
+.portlet-barebone {
+	.portlet {
+		.portlet-header {
+			// z-index: 1200;
+
+			.portlet-title-text {
+				display: none;
+			}
+		}
+
+		.portlet-content {
+			padding: 0;
+		}
+	}
+}
+
+.portlet-barebone-nm {
+	.portlet {
+		margin: 0 0 0 0;
+	}
+
+	.portlet-title-text {
+		display: none;
+	}
+}
+
+.portlet-borderless {
+	.portlet {
+		.portlet-content {
+			padding: 0;
+
+			&.portlet-content-editable {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.portlet-journal-content {
+	&.portlet-barebone {
+		.portlet {
+			.portlet-header {
+				z-index: 55;
+			}
+		}
+	}
+}
+
+.cont-pag .portlet-journal-content {
+	&.portlet-barebone {
+		.portlet-content {
+			&.portlet-content-editable {
+				.portlet-content-container {
+					padding-top: 32px;
+				}
+			}
+		}
+	}
+}
+
+.portlet-journal-content {
+	&.portlet-barebone.pheader-ptop {
+		.portlet-content {
+			&.portlet-content-editable {
+				.portlet-content-container {
+					padding-top: 32px;
+				}
+			}
+		}
+	}
+}
+
+#layout-column_column-2 {
+	.portlet-journal-content {
+		&.portlet-barebone {
+			.portlet-content {
+				&.portlet-content-editable {
+					.portlet-content-container {
+						padding-top: 32px;
+					}
+				}
+			}
+		}
+	}
+}

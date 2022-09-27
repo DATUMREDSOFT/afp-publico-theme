@@ -1,0 +1,90 @@
+#sitio-web {
+    #tabs-inicio {
+        .row {
+            margin-left: -10px;
+        }
+
+        h3 {
+            font-size: 11px;
+        }
+
+        img {
+            padding: 10px;
+        }
+
+        >ul {
+            height: 40px;
+            background-image: url(../images/bg-tabs1.jpg);
+            border-top: solid 1px #fff;
+            border-bottom: solid 1px #fff;
+
+            li {
+                float: left;
+
+                a {
+                    display: block;
+                    padding: 10px 20px;
+                    color: #126BB1;
+                    border-right: solid 1px #fff;
+                    background-image: url(../images/bg-tabs1.jpg);
+                    background-repeat: repeat-x;
+                    text-transform: uppercase;
+                    font-weight: 700;
+
+                    &:hover {
+                        color: #0490D8;
+                        text-decoration: none;
+                    }
+
+                    &.active {
+                        background-image: url(../images/bg-tabs2.jpg);
+                    }
+                }
+
+                &:first-child {
+                    border-left: solid 1px #fff;
+                }
+            }
+        }
+
+        .tab-pane.active {
+            background-color: #E6E6E6;
+            padding: 10px;
+        }
+
+        .inner-tabs {
+            >ul {
+                float: left;
+                width: 150px;
+
+                a {
+                    display: block;
+                    padding: 5px 10px;
+                    border-bottom: solid 1px #ccc;
+                    color: #333;
+                    background-image: url(../images/bull-03.jpg);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+
+                    &:hover {
+                        color: #2C8EE5;
+                    }
+                }
+            }
+
+            .panel-container {
+                margin-left: 170px;
+            }
+        }
+
+        .tab-wrap {
+            width: 406px;
+            height: 187px;
+            margin: 10px auto;
+            padding: 10px;
+            background-image: url(../images/box-programa-agregado.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

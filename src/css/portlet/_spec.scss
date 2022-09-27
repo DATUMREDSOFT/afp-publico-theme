@@ -1,0 +1,21 @@
+/* ---------- Standard styles defined in the JSR 168 specification ---------- */
+
+/* ---------- Fonts ---------- */
+
+
+/* ---------- Sections ---------- */
+
+.portlet-section-selected {
+	&,
+	a {
+		background: #727c81;
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:focus {
+		background-color: #727c81;
+	}
+}

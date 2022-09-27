@@ -1,0 +1,84 @@
+body #sitio-web {
+    .confia-cultural-calendario {
+        height: 762px;
+        background-image:url(../images/bg-confia-cultural.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: bottom right;
+        position:relative;
+        .mensaje-movil {
+            display: none;
+        }
+        .wrap-marquesina {
+            width: 200px;
+            height:260px;
+            position: absolute;
+            top: 310px;
+            left: 100px;
+        }
+        .obra {
+            padding: 13px 0;
+            border-bottom: solid 1px #fff;
+            .titulo-obra {
+                color: #fff;
+                font-weight:700;
+                font-size:1.25rem
+
+            }
+            .fecha-obra {
+                color: yellow;
+                font-size:1rem;
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:767.98px){
+    body #sitio-web {
+        .confia-cultural-calendario {
+            background-image:none;
+            padding: 20px;
+            background-color: #005e9a;
+            position: static;
+            height:auto;
+            .obra {
+                .titulo-obra,.fecha-obra {
+                    font-size: 1.15rem;
+                }
+            }
+            .mensaje-movil {
+                display:block;
+                padding: 10px 0;
+                color: #fff;
+                text-align:center;
+                h2 {
+                    color: yellow;
+                    text-transform: uppercase;
+                    margin-bottom:0;
+                    span {
+                        font-size: 1rem;
+                        text-transform: unset;
+                    }
+                }
+                .tel {
+                    font-size: 1.75rem;
+                    font-weight:700;
+                    color: #fff;
+                }
+                p {
+                    margin-bottom:0;
+                }
+            }
+            .wrap-marquesina {
+                position: static;
+                width:100%;
+                padding:20px;
+                background-color: #4ea8e2;
+                border-radius:10px;
+            }
+        }
+    }
+}

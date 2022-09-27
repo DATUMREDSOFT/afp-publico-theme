@@ -1,0 +1,151 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+@import "custom_bootstrap_grid";
+@import "custom_global_wrapper";
+
+// IMAGE VIEWER
+
+.image-viewer-info {
+    display: none;
+}
+
+.image-viewer-base-control.invisible {
+    visibility: visible !important;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .mw-980 {
+        max-width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mw-850 {
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* @media only screen and(min-width: 768px) {
+    body.has-control-menu {
+        #sitio-web {
+            margin-top: 56px;
+        }
+    }
+} */
+
+body {
+    #sitio-web {
+        background-image: url(../images/bg-ppal.jpg);
+        font-size: 0.75rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #212121;
+        // TITULOS
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin:0;
+            color: #018FD7;
+            
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+        }
+        h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        // ENLACES
+        a {
+            color: #0490D8;
+            text-decoration: none;
+            &:visited {
+                color: #0490D8;
+            }
+
+            &:hover {
+                color: #10336C;
+                text-decoration: none;
+            }
+        }
+
+        // LISTAS
+        ul,
+        ol {
+            &.inline {
+                li {
+                    display: inline;
+                }
+            }
+        }
+
+        ul {
+            list-style:none;
+        }
+
+        // FONDOS 
+        #contenido-central {
+            background-image: url(../images/top-contenido-v2.jpg),url(../images/foot-contenido.jpg),url(../images/body-contenido.jpg);
+            background-position: center top, center bottom, center;
+            background-repeat: no-repeat, no-repeat, repeat-y;
+            padding-top:22px;
+            padding-bottom: 34px;
+        }
+    }
+}
+
+@import "custom_bootstrap";
+@import "custom_layouts";
+@import "custom_header";
+@import "custom_navegacion";
+@import "custom_menus_varios";
+@import "custom_breadcrumb";
+@import "custom_busquedas";
+@import "custom_footer";
+@import "custom_slider";
+@import "custom_botones";
+@import "custom_contenidos";
+@import "custom_modal";
+@import "custom_tablas";
+@import "custom_listas";
+@import "custom_tabs_promociones";
+@import "custom_contenido_central_textos";
+@import "custom_registrate_confia_virtual";
+@import "custom_comunicacion_electronica";
+@import "custom_senales_confiar";
+@import "custom_confia_cultural";
+@import "custom_confia_gerencial";
+@import "custom_senales_confiar";
+@import "custom_dropdown_agencias";
+@import "custom_canales_atencion";
+@import "custom_agencias";
+@import "custom_sal_exterior";
+@import "custom_docs_brochures";
+@import "custom_tipos_pension";
+@import "custom_biblioteca";
+@import "custom_toggler";
+@import "custom_forms";
+@import "custom_ayuda";
+@import "custom_tabs";
+@import "custom_menu_apv";
+@import "custom_apv_cuadro_diario";
+@import "custom_apv_graficos_dinamicos";
+@import "custom_hecho_relevante";
+@import "custom_toggler_visor_pdf";
+@import "custom_tabulator";
+@import "search";
+@import "custom_helpers";

@@ -1,0 +1,82 @@
+body #sitio-web {
+
+
+    .ban-tipos-pension{
+        .banner {
+            background-position: top;
+            background-color: #ccdae7;
+            background-size:cover;
+        }
+    }
+
+
+    .tipos-pension-intro {
+        position: relative;
+        top: 70px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+}
+
+@media(max-width:951.98px) {
+    body #sitio-web {
+        .tipos-pension-intro {
+            padding:5px;
+        }
+    }
+}
+
+@media(max-width:767.98px) {
+    body #sitio-web {
+        .ban-tipos-pension{
+            .banner {
+                background-size:contain;
+            }
+        }
+        .tipos-pension-intro {
+            position: relative;
+            padding:10px;
+            max-width:250px;
+
+        }
+    }
+}
+
+/* @media(max-width:750.98px) {
+    body #sitio-web {
+        .tipos-pension-intro {
+            position: relative;
+            padding:10px;
+            max-width:250px;
+            margin-top:0;
+        }
+    }
+} */
+
+@media(max-width:575.98px) {
+    body #sitio-web {
+        .tipos-pension-intro {
+            position: static;
+            margin-top:85px;
+            margin-bottom: 10px;
+            margin-right:10px;
+            padding:5px;
+            background-color: #f0f5f9;
+            border-radius: 5px;
+            border: solid 1px #cbdce3;
+
+        }
+    }
+}
+
+@media(max-width:479.98px) {
+    body #sitio-web {
+        .tipos-pension-intro {
+            margin-top:55px;
+
+        }
+    }
+}

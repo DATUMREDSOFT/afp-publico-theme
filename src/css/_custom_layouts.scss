@@ -1,0 +1,62 @@
+#sitio-web {
+    #main-content {
+        &.afp-confia-layout-2 {
+
+            .col-md-center {
+                .col-wrap {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-left: solid 1px #d6dce3;
+                }
+            }
+
+            .col-md-der {
+                .col-wrap {
+                    padding-left: 10px;
+                    border-left: solid 1px #d6dce3;
+                }
+            }
+        }
+
+        &.afp-confia-layout-3 {
+            .col-md-cont-der {
+                .col-wrap {
+                    padding-left: 10px;
+                    border-left: solid 1px #d6dce3;
+                }
+            }
+        }
+
+        &.afp-confia-layout-4 {
+            .col-md-der {
+                .col-wrap {
+                    padding-left: 10px;
+                    border-left: solid 1px #d6dce3;
+                }
+            }
+        }
+
+        &.afp-confia-layout-5 {
+            .cont-pag {
+                .col-wrap {}
+            }
+        }
+
+        &.afp-confia-layout-7 {
+            .col-md-cont-der {
+                .col-wrap {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-left: solid 1px #d6dce3;
+                }
+            }
+
+            .col-md-der {
+                .col-wrap {
+                    padding-left: 10px;
+                    border-left: solid 1px #d6dce3;
+                }
+            }
+        }
+    }
+}

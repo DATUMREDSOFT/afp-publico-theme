@@ -1,0 +1,59 @@
+body #sitio-web {
+    .estructura-canales-atencion {
+        background-repeat: no-repeat;
+        background-position: bottom right;
+
+        .canal {
+            position: relative;
+        }
+
+
+        .logo-confia-futuro {
+            left: 380px;
+        }
+
+        .canal-confia-tel {
+            left: 200px;
+        }
+
+        .canal-confia-contacto {
+            left: 130px;
+        }
+
+        .canal-confia-movil {
+            left: 60px;
+        }
+
+        .canal-confia-virtual {
+            left: 30px;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    #sitio-web {
+        .estructura-canales-atencion {
+            background-image: none;
+
+            .canal {
+                background-color: #f3fafe;
+                padding: 0 0 10px;
+                border-bottom: solid 1px #D6DCE3;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+
+                &.logo-confia-futuro,
+                &.canal-confia-tel,
+                &.canal-confia-contacto,
+                &.canal-confia-movil,
+                &.canal-confia-virtual,
+                &.canal-confia-agencias {
+                    position: static;
+                }
+            }
+        }
+    }
+}

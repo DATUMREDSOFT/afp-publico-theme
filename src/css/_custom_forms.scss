@@ -1,0 +1,102 @@
+body {
+    #sitio-web {
+        .contactenos-form {
+            .portlet-forms {
+                h1.ddm-form-name {
+                    display: none;
+                }
+                h5.ddm-form-description {
+                    color: #000;
+                    font-size: 13px;
+                    padding: 1rem 0;
+                    line-height:1rem;
+                }
+                .lfr-ddm-form-page {
+                    padding: 0;
+                }
+                .lfr-ddm-form-submit {
+                    padding-left:30px;
+                    background-color: #009ac9;
+                    background-image: url('../images/arrow-enviar-form.png');
+                    background-position: center left;
+                    background-repeat: no-repeat;
+                }
+                > form {
+                    background-color: #fff;
+                    padding:20px;
+                    border-radius: 10px;
+                    .form-control {
+                        border: solid 1px #AAD1E3;
+                        border-radius: 0;
+                        background-color: #EFF3F7;
+                        height: auto;
+                        font-size:0.75rem;
+                        padding:5px;
+                    }
+                    ::placeholder {
+                        opacity: 1;
+                        color: #2DA4D5;
+                    }
+                    .form-group {
+                        margin-bottom: 0;
+                    }
+                    label {
+                        margin-bottom: 0;
+                        font-weight:700;
+                        color: #2DA4D5;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+
+        .portlet-forms {
+            background-color: #fff;
+            h1.ddm-form-name {
+                display: none;
+            }
+            h5.ddm-form-description {
+                color: #000;
+                font-size: 13px;
+                padding: 1rem 0;
+                line-height:1rem;
+            }
+            .lfr-ddm-form-page {
+                padding: 0;
+            }
+            .lfr-ddm-form-submit {
+                padding-left:30px;
+                background-color: #009ac9;
+                background-image: url('../images/arrow-enviar-form.png');
+                background-position: center left;
+                background-repeat: no-repeat;
+            }
+            > form {
+                background-color: #fff;
+                padding:20px;
+                border-radius: 10px;
+                .form-control {
+                    border: solid 1px #AAD1E3;
+                    border-radius: 0;
+                    background-color: #EFF3F7;
+                    height: auto;
+                    font-size:0.75rem;
+                    padding:5px;
+                }
+                ::placeholder {
+                    opacity: 1;
+                    color: #2DA4D5;
+                }
+                .form-group {
+                    margin-bottom: 0;
+                }
+                label {
+                    margin-bottom: 0;
+                    font-weight:700;
+                    color: #2DA4D5;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}

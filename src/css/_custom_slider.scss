@@ -1,0 +1,106 @@
+body {
+    #sitio-web {
+        /* SLIDER INICIO */
+
+        .wrap-slider-inicio {
+            max-width: 713px;
+        }
+
+        .bx-wrapper {
+            border: 0;
+            box-shadow: none;
+            margin-bottom: 0;
+            background-color: transparent;
+
+            .bx-pager {
+                left: 50%;
+                max-width: 150px;
+                margin-left: -75px;
+                bottom: -10px;
+                border: solid 1px #bbb;
+                padding-bottom: 5px;
+                padding-top: 0;
+
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dddddd+0,ffffff+100 */
+                background: #dddddd;
+                background: -moz-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+                background: -webkit-linear-gradient(top, #dddddd 0%, #ffffff 100%);
+                background: linear-gradient(to bottom, #dddddd 0%, #ffffff 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#ffffff', GradientType=0);
+            }
+        }
+
+        .dot-pager {
+            text-align: center;
+            max-width: 110px;
+            margin: 0 auto;
+            border: solid 1px #aaa;
+            background-color: #ddd;
+            position: relative;
+            top: -15px;
+            // box-shadow: 2px 2px 3px #555;
+            z-index: 50;
+            padding: 4px 0;
+
+            a {
+                color: #888;
+                padding: 0 2px;
+
+                &:hover,
+                &.active {
+                    color: #555;
+                }
+            }
+        }
+
+        .custom-pager {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            img {
+                max-width: 75px;
+                height: auto;
+                border: solid 1px lighten(#0490D8, 15%);
+
+                &:hover {
+                    border-color: #0490D8;
+                }
+            }
+
+            &.num {
+                background-color: #ddd;
+
+                a {
+                    padding: 5px;
+                    border: solid 1px #888;
+                    background-color: #aaa;
+                    margin-right: 3px;
+                    color: #555;
+
+                    &.active {
+                        color: #fff;
+                        background-color: #405E90;
+
+                    }
+
+                    &:hover {
+                        background-color: #999;
+                    }
+
+                    &:last-child {
+                        margin-right: 0
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:767.98px) {
+    #sitio-web {
+        .dot-pager {
+            left: 50px;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+body {
+    #sitio-web {
+        #headerPrincipal,#footBottom {
+            .portlet-search {
+                section.portlet {
+                    margin-bottom: 0;
+                }
+
+                fieldset.input-container {
+                    background-color: #0490D8;
+                    border-radius: 4px;
+                    max-width: 263px;
+                }
+
+                span[class^="icon-monospaced"],.icon-monospaced {
+                    line-height:5px;
+                    height:inherit;
+                }
+
+                .btn.btn-light.btn-unstyled {
+                    color: #ffffff;
+                    background-color: #0490D8;
+
+                    &:hover {
+                        background-color: #0490D8;
+                        color: #ffffff;
+                    }
+                }
+
+                .form-group {
+                    margin-bottom: 0;
+                }
+
+                .field.search-input.form-control {
+                    width: 100%;
+                    max-width: 227px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    font-size: 0.8rem;
+                }
+
+                .lfr-ddm-field-group {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        // portlet search
+
+        .portlet-search {
+            h5 a {
+                border-bottom: dotted 1px #ddd;
+                display:block;
+                padding:0 0 10px 0;
+            }
+            h6.text-default {
+                color: #000;
+            }
+            .panel-title {
+                text-transform: uppercase;
+                font-weight:700;
+                padding:5px 10px;
+            }
+        }
+    }
+}

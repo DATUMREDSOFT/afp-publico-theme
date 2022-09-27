@@ -1,0 +1,263 @@
+#sitio-web {
+    .promo-tabs {
+
+        h1,
+        h2,
+        h3 {
+            color: #fff;
+        }
+
+        .nav {
+            list-style-image: none;
+
+            >li {
+                left: 380px;
+                margin-left: 5px;
+            }
+
+            &.nav-tabs {
+                border-bottom: 0;
+
+                li {
+
+                    a,
+                    a:hover {
+                        color: #fff;
+                        font-weight: 700;
+
+                        &.azul {
+                            background-color: #0060A5;
+                        }
+
+                        &.dorado {
+                            background-color: #E6B957;
+                        }
+
+                        &.naranja {
+                            background-color: #FBB516;
+                        }
+
+                        &.platino {
+                            background-color: #A8C2C1;
+                        }
+
+                    }
+
+                    .active {
+
+                        a,
+                        a:hover {
+                            color: #fff;
+
+                            &.azul {
+                                background-color: #0060A5;
+                            }
+
+                            &.dorado {
+                                background-color: #E6B957;
+                            }
+
+                            &.naranja {
+                                background-color: #FBB516;
+                            }
+
+                            &.platino {
+                                background-color: #A8C2C1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .promos {
+            overflow-y: auto;
+            max-height:1010px;
+        }
+
+        .promocion {
+            width: 33.333333333%;
+            float: left;
+            padding: 10px;
+
+            .promo-lugar {
+                background-color: #fff;
+                border-radius: 10px;
+                border-right: solid 1px #ddd;
+                border-bottom: solid 1px #ddd;
+                padding: 10px;
+            }
+
+            .promo-info {
+                line-height: 1;
+                color: #E48402;
+
+                .valor {
+                    font-size: 2.6rem;
+                    font-weight: 700;
+                }
+            }
+
+            .indicaciones {
+                display: block;
+                margin: 0 10px;
+                padding: 3px;
+                background-color: #dddddd;
+                border-radius: 0 0 5px 5px;
+                text-align: center;
+            }
+
+        }
+
+        .promo-contenido {
+            padding: 20px 0;
+            margin-right: 75px;
+        }
+
+        h2.promo-titulo {
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+
+        h3.promo-subtitulo {
+            text-transform: unset;
+            font-size: 1rem;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        .tab-pane {
+            border-radius: 10px;
+            padding: 20px;
+
+            &.azul {
+                background-color: #0060A5;
+            }
+
+            &.dorado {
+                background-color: #E6B957;
+            }
+
+            &.naranja {
+                background-color: #FBB516;
+            }
+
+            &.platino {
+                background-color: #A8C2C1;
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                background-image: url(../images/fondo-promociones.png);
+                background-repeat: no-repeat;
+                background-position: center right;
+                background-size: 70%;
+            }
+        }
+    }
+}
+@media(max-width:977.98px){
+    #sitio-web {
+        .promo-tabs {
+            .nav {
+                >li {
+                    left: 80px;
+                    margin-left: 0;
+
+                }
+            }
+            .tab-content {
+                .tab-pane {
+                    background-image:  none;
+                }
+            }
+            .promos {
+                max-height: none;
+                height:auto;
+            }
+        }
+    }
+}
+@media (max-width:767.98px) {
+    #sitio-web {
+        .promo-tabs {
+            background-image: none;
+
+            .nav {
+                >li {
+                    left: 20px;
+                    margin-left: 0;
+
+                    a {
+                        padding: 0.5rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .promos {
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                overflow: auto;
+                max-height:none;
+            }
+
+            .promocion {
+                .promo-info {
+                    line-height: 1;
+                    color: #E48402;
+
+                    .valor {
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .indicaciones {
+                    display: block;
+                    margin: 0 10px;
+                    padding: 3px;
+                    background-color: #bbbbbb;
+                }
+
+            }
+
+            .promo-contenido {
+                padding: 20px 0;
+                margin-right: 0;
+            }
+
+            .tab-content {
+                .tab-pane {
+                    background-image: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:567.98px) {
+    #sitio-web {
+        .promo-tabs {
+            .promocion {
+                width: 100%;
+                float: none;
+                .aleft {
+                    text-align: left;
+                }
+            }
+            .tab-content {
+                .tab-pane {
+                    background-image: none;
+                }
+            }
+            .promos {
+                max-height:none;
+            }
+        }
+    }
+
+}

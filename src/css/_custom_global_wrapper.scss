@@ -1,0 +1,103 @@
+body.sidenav-transition {
+    #sitio-web {
+        -webkit-transition: padding .5s ease;
+        -moz-transition: padding .5s ease;
+        transition: padding .5s ease
+    }
+}
+
+.portlet-content-editable {
+    border: 0;
+    border-style: none;
+}
+
+.has-control-menu {
+    .affix,
+    #sitio-web {
+        margin-top: 48px;
+
+        .portlet-boundary {
+            >span:first-child {
+                display: block;
+                position: relative;
+                top: -48px;
+                visibility: hidden
+            }
+        }
+
+        :target::before {
+            content: '';
+            display: block;
+            height: 48px;
+            margin-top: -48px
+        }
+    }
+
+    &.has-customization-menu {
+        .affix,
+        #sitio-web {
+            margin-top: 96px;
+
+            .portlet-boundary {
+                >span:first-child {
+                    display: block;
+                    position: relative;
+                    top: -96px;
+                    visibility: hidden
+                }
+            }
+
+            :target::before {
+                content: '';
+                display: block;
+                height: 96px;
+                margin-top: -96px
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width:768px) {
+    body.open #sitio-web {
+        padding-left: 320px
+    }
+    .has-control-menu {
+
+        .affix,
+        #sitio-web {
+            margin-top: 56px;
+
+            .portlet-boundary {
+                >span:first-child {
+                    top: -56px
+                }
+            }
+
+            :target::before {
+                height: 56px;
+                margin-top: -56px
+            }
+        }
+
+        &.has-customization-menu {
+
+            .affix,
+            #sitio-web {
+                margin-top: 112px;
+
+                .portlet-boundary {
+                    >span:first-child {
+                        top: -112px;
+                    }
+                }
+
+                :target::before {
+                    height: 112px;
+                    margin-top: -112px
+                }
+            }
+        }
+    }
+}

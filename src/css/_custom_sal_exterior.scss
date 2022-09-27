@@ -1,0 +1,47 @@
+body #sitio-web {
+    .bg-exterior {
+        background-image: url(../images/img-sexterior1.jpg);
+        background-repeat: no-repeat;
+        background-position: 1px bottom;
+        background-color: #eff2f7;
+        max-width:660px;
+    }
+}
+
+
+@media(max-width:976.98px){
+    body #sitio-web {
+        .bg-exterior {
+            background-size:cover;
+            background-position: -10px bottom;
+        }
+    }
+}
+
+@media(max-width:767.98px){
+    body #sitio-web {
+        .bg-exterior {
+            background-size:cover;
+            background-position: -11px;
+        }
+    }
+}
+
+@media(max-width:575.98px){
+    body #sitio-web {
+        .bg-exterior {
+            background-size:cover;
+            background-position: -164px;
+        }
+    }
+}
+
+
+@media(max-width:479.98px){
+    body #sitio-web {
+        .bg-exterior {
+            background-size:cover;
+            background-position: -402px;
+        }
+    }
+}

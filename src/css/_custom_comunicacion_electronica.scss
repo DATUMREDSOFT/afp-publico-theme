@@ -1,0 +1,99 @@
+#sitio-web {
+    .comunicacion-electronica {
+        background-image: url(../images/bg-programa-comunicacion.jpg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        height: 636px;
+        background-color: #00447e;
+
+        .com-el {
+            position: relative;
+            max-width: 145px;
+            line-height: 1.2;
+
+            h3 {
+                text-transform: unset;
+                font-size: 1.3em;
+                font-weight: 400;
+                margin: 0;
+            }
+
+            &.estado-cuenta {
+                left: 22px;
+                top: 130px;
+            }
+
+            &.noti-confia {
+                left: 212px;
+                top: 55px;
+            }
+
+            &.invitaciones-eventos {
+                left: 395px;
+                bottom: 23px;
+            }
+
+            &.info-confia {
+                left: 22px;
+                top: 55px;
+
+            }
+
+            &.felicitaciones {
+                left: 212px;
+                bottom: 20px;
+            }
+
+            &.asesoria-tramite {
+                left: 212px;
+                top: 95px;
+            }
+        }
+    }
+}
+
+@media all and (-ms-high-contrast:none) {
+
+    *::-ms-backdrop, #sitio-web .comunicacion-electronica .com-el h3 {
+            text-transform:initial;
+            font-size: 1.1em;
+    }
+
+    *::-ms-backdrop,
+    #sitio-web .comunicacion-electronica .com-el.invitaciones-eventos {
+        bottom: 20px;
+    }
+
+    *::-ms-backdrop,
+    #sitio-web .comunicacion-electronica .com-el.asesoria-tramite {
+        top: 105px;
+    }
+}
+
+@supports (-moz-appearance:none) {
+    #sitio-web .comunicacion-electronica .com-el.asesoria-tramite {
+        top: 75px;
+    }
+}
+
+@media(max-width:768px) {
+    #sitio-web {
+        .comunicacion-electronica {
+            padding: 336px 10px 10px 10px;
+            background-image: url(../images/bg-programa-comunicacion-movil.jpg);
+            background-position: center top;
+            background-color: #00447e;
+            height: auto;
+            border-radius: 10px;
+
+            .com-el {
+                position: static;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                max-width: 100%;
+            }
+        }
+    }
+}

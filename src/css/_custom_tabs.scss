@@ -1,0 +1,98 @@
+body #sitio-web {
+    .web-content-tabs ul.nav-tabs {
+        background-color: #e6e6e6;
+        background: rgb(197, 207, 217);
+        background: -moz-linear-gradient(top, rgba(230, 230, 230, 1) 0%, rgba(197, 207, 217, 1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(230, 230, 230, 1) 0%, rgba(197, 207, 217, 1) 100%);
+        background: linear-gradient(to bottom, rgba(230, 230, 230, 1) 0%, rgba(197, 207, 217, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#c5cfd9', GradientType=0);
+        border-bottom: solid 1px #fff
+    }
+    .web-content-tabs ul.nav-tabs li {
+        margin-bottom:0;
+    }
+    .web-content-tabs ul.nav-tabs li.tab.active a {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5cfd9+0,e6e6e6+100 */
+        background: rgb(197, 207, 217);
+        background: -moz-linear-gradient(top, rgba(197, 207, 217, 1) 0%, rgba(230, 230, 230, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(197, 207, 217, 1) 0%, rgba(230, 230, 230, 1) 100%);
+        background: linear-gradient(to bottom, rgba(197, 207, 217, 1) 0%, rgba(230, 230, 230, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5cfd9', endColorstr='#e6e6e6', GradientType=0);
+        border-left:solid 1px #fff;
+        border-right:0;
+        border-top: 0;
+        border-bottom:0;
+        border-radius:0;
+    }
+
+    .web-content-tabs ul.nav-tabs li.tab a {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5cfd9+0,e6e6e6+100 */
+        background: rgb(197, 207, 217);
+        background: -moz-linear-gradient(top, rgba(230, 230, 230, 1) 0%, rgba(197, 207, 217, 1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(230, 230, 230, 1) 0%, rgba(197, 207, 217, 1) 100%);
+        background: linear-gradient(to bottom, rgba(230, 230, 230, 1) 0%, rgba(197, 207, 217, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6', endColorstr='#c5cfd9', GradientType=0);
+        border: 0;
+        border-left:solid 1px #fff;
+    }
+
+    .web-content-tabs {
+        div.tab-pane {
+            padding:10px;
+            background-color: #e6e6e6;
+            ul.menu-vertical-slider {
+                li {
+                    font-size:11px;
+                }
+                a,a.black {
+                    font-size:11px;
+                    color: #000;
+                    &:hover {
+                        color: #0490d8;
+                    }
+                }
+            }
+        }
+    }
+
+    .web-content-tabs {
+        .box-programa-agregado {
+            background-image: url(../images/box-programa-agregado.jpg);
+            background-repeat:no-repeat;
+            background-position:center;
+            padding:40px;
+        }
+        .bloque-agencias {
+            background-image: url(../images/bg-agencias-tabs.jpg );
+            padding:20px 10px 10px;
+            font-size:0.7rem;
+            background-repeat:no-repeat;
+            background-position: center;
+            min-height:127px;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+@media (max-width:767.98px){
+    body #sitio-web {
+        .web-content-tabs {
+            .box-programa-agregado {
+                background-image: none;
+                background-color: #fff;
+                border-radius: 10px;
+                padding:20px;
+            }
+
+            .bloque-agencias {
+                background-image: none;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

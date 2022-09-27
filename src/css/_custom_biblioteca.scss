@@ -1,0 +1,13 @@
+body #sitio-web {
+    .biblioteca {
+        
+    }
+}
+
+@media(max-width:575.98px){
+    body #sitio-web {
+        .biblioteca {
+            background-image: none !important;
+        }
+    }
+}

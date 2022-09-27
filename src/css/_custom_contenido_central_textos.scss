@@ -1,0 +1,64 @@
+#sitio-web {
+    .titulo-pagina-fondo {
+        h1 {font-size:1.25rem;}
+        
+    }
+    .cont-pag {
+        h2,h3,h4 {
+            margin-bottom:10px;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        ul {
+            list-style-image: url(../images/bull-06.jpg);
+            &.w-bullets {
+                list-style-image: url(../images/bull-06w.jpg); 
+            }
+            &.list-menu {
+                padding-left:20px;
+            }
+        }
+        a.link-hl {
+            border-bottom: solid 1px #fab312;
+            background-color: #fce3a9;
+            &:hover {
+                background-color: #FEF5E2;
+            }
+        }
+
+        .aviso-importante {
+            padding: 10px 20px 10px 58px;
+            background-color: #ffe2a8;
+            border-bottom: solid 1px #ff9900;
+            margin-bottom:20px;
+            margin-top:20px;
+            background-image: url(../images/ico-cf-info-o-small.png);
+            background-position: 10px center;
+            background-repeat: no-repeat;
+            h3,h2 {
+                font-size: 0.9rem;
+                color: #7A5B11;
+                margin-bottom: 0;
+            }
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        // PORTLET TITLE BORDERLESS
+
+        h2.portlet-title-text {
+            font-size:11px;
+            font-weight:700;
+            border-bottom: solid 1px #d6dce3;
+            padding-top:5px;
+            padding-bottom:5px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}

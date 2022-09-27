@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html id="document:html" lang="en" xmlns:jsp="http://java.sun.com/JSP/Page"><head><link href="https://www.confia.com.sv:443/favicon.ico" rel="shortcut icon" /><title id="document:title">AFP Confía - Por el mañana que tú quieres</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="es" http-equiv="Content-Language" /><meta content="no" http-equiv="imagetoolbar" /><meta content="sameorigin" http-equiv="X-Frame-Options" /><meta content="" name="keywords" /><meta content="" name="description" /><link href="https://www.confia.com.sv:443/css/estilo-confia.css" rel="stylesheet" type="text/css" /><link href="https://www.confia.com.sv:443/css/style.css" rel="stylesheet" type="text/css" /><link href="https://www.confia.com.sv:443/css/slider-tabs.css" rel="stylesheet" type="text/css" /><link href="https://www.confia.com.sv:443/css/highslide.css" rel="stylesheet" type="text/css" /><link href="https://www.confia.com.sv:443/css/anylinkcssmenu.css" rel="stylesheet" type="text/css" /><link href="https://www.confia.com.sv:443/css/style-acordion.css" rel="stylesheet" type="text/css" /><link href="https://www.confia.com.sv:443/js/sexy-tooltips/blue.css" id="theme" media="all" rel="stylesheet" type="text/css" /><script src="https://www.confia.com.sv:443/js/script.js" type="text/javascript"></script>
+<script src="https://www.confia.com.sv:443/js/jquery.js" type="text/javascript"></script>
+<script src="https://www.confia.com.sv:443/js/jquery.tabSwitch.yui.js" type="text/javascript"></script>
+<script src="https://www.confia.com.sv:443/js/jquery.ba-bbq.min.js" type="text/javascript"></script>
+<script src="https://www.confia.com.sv:443/js/highslide-full.js" type="text/javascript"></script>
+<script src="https://www.confia.com.sv:443/js/tooltip.js" type="text/javascript"></script>
+<script src="https://www.confia.com.sv:443/js/anylinkcssmenu.js" type="text/javascript"></script>
+<script type="text/javascript">
+		anylinkcssmenu.init("anchorclassagen");
+		hs.graphicsDir = 'https://www.confia.com.sv:443/graphics/';
+		hs.outlineType = 'rounded-white';
+		hs.wrapperClassName = 'draggable-header';
+		hs.dimmingOpacity = 0.7;
+		hs.align = 'center';</script>
+<script type="text/javascript">
+	// Principal
+	jQuery(document).ready(function () {
+		jQuery('#cierreSesion').load('https://www.confia.com.sv:443/VerificadorSesion/', function (){ 
+			anylinkcssmenu.init("anchorclass");
+		});
+	
+		jQuery("ul.menu_body li:even").addClass("alt");
+		jQuery('img.menu_head').click(function () {
+			jQuery('ul.menu_body').slideToggle('medium');
+    	});
+		
+		jQuery('ul.menu_body li a').mouseover(function () {
+			jQuery(this).animate({ fontSize: "11px", paddingLeft: "17px" }, 50 );
+    	});
+	
+		jQuery('ul.menu_body li a').mouseout(function () {
+			jQuery(this).animate({ fontSize: "11px", paddingLeft: "10px" }, 50 );
+    	});
+		//jQuery('#fc-07-content1').fadeIn(1200);
+	});
+	
+function validar(e){
+	tecla = (document.all) ? e.KeyCode : e.which;
+	if(tecla==8 || tecla==13) return true;
+	patron=/[A-Za-z0-9\s]/;
+	te = String.fromCharCode(tecla);
+	return patron.test(te);
+}
+function frameScript(){
+    if(top!=self){
+      //top.location.href = location.href;
+           top.location = self.location;
+    }
+    /* 20100708 - Cross-Frame Scripting / New Cross-Frame Scripting Vulnerabilities*/
+    else {
+           document.getElementById('errorpage').style.display='none';
+           document.getElementById('mainpage').style.display='block'; 
+    }
+  }</script>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('.SlideTab2').tabSwitch('create',{width: 681});
+		jQuery('.tabSelect2').click(function(e){
+			jQuery('.SlideTab2').tabSwitch('moveTo',{index: parseInt(jQuery(this).attr("rel"))});
+			e.preventDefault();
+			jQuery('.tabSelect2').removeClass("current");
+			jQuery(this).addClass("current");
+		});
+		jQuery('.Nav').click(function(e){
+			jQuery('.SlideTab2').tabSwitch('moveStep',{step: parseInt(jQuery(this).attr("rel"))});
+			e.preventDefault();
+		});
+	});
+	
+//---slider tabs  --->
+
+
+//-------------------------------------------sliderShows ------------------------------>
+	jQuery(function(){
+		jQuery('.SlideTab3').tabSwitch('startAuto',{interval: 7000});
+		jQuery('.SlideTab3').tabSwitch('create', {type: 'toggle', toggle: 'fade', height: 319, width: 713});
+		jQuery('.tabSelect3').click(function(e){
+			jQuery('.SlideTab3').tabSwitch('moveTo',{index : jQuery(this).attr('rel') });
+			e.preventDefault();
+			jQuery('.tabSelect3').removeClass("current");
+			jQuery(this).addClass("current");
+		});
+		jQuery('.Nav').click(function(e){
+			jQuery('.SlideTab3').tabSwitch('moveStep',{step: parseInt(jQuery(this).attr('rel'))});
+			e.preventDefault();
+		});
+	});
+	
+	jQuery(function(){
+		jQuery('.SlideTab9').tabSwitch('create', {type: 'scroll', height: 176, width: 500});
+				jQuery('.tabSelect9').click(function(e){
+			jQuery('.SlideTab9').tabSwitch('moveTo',{index : jQuery(this).attr('rel') });
+						e.preventDefault();
+		});
+		jQuery('.Nav').click(function(e){
+			jQuery('.SlideTab9').tabSwitch('moveStep',{step: parseInt(jQuery(this).attr('rel'))});
+						e.preventDefault();
+		});
+	});</script>
+<script type="text/javascript">
+	function showPopup(link){
+		return hs.htmlExpand(link, { objectType: 'iframe', headingText: 'AFP CONFIA | Por el mañana que tu quieres', width: '525' });
+	}</script>
+<meta content="Rendered by ICEFaces D2D" name="icefaces" /><script src="/xmlhttp/1488331768452/icefaces-d2d.js" type="text/javascript"></script>
+<script src="/xmlhttp/1488331768452/ice-extras.js" type="text/javascript"></script>
+<script type="text/javascript">try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}</script></head>
+<body AUTOCOMPLETE="off" id="document:body" onLoad="frameScript();"><iframe frameborder="0" id="history-frame:xTn4UNO7hcF4aZnRQEKqAA:1" name="history-frame:xTn4UNO7hcF4aZnRQEKqAA:1" src="/xmlhttp/blank" style="z-index: 10000; visibility: hidden; width: 0; height: 0; position: absolute; opacity: 0.22; filter: alpha(opacity=22);" title="Icefaces Redirect"></iframe>
+<script id="xTn4UNO7hcF4aZnRQEKqAA:1:configuration-script" type="text/javascript">window.disposeViewsURI = '/block/dispose-views';
+window.windowFocusRestore = false;
+var container = 'xTn4UNO7hcF4aZnRQEKqAA:1:configuration-script'.asElement().parentNode;
+container.bridge = new Ice.Community.Application({optimizedJSListenerCleanup: false,session: 'xTn4UNO7hcF4aZnRQEKqAA',view: 1,synchronous: false,connectionLostRedirectURI: null,sessionExpiredRedirectURI: null,serverErrorRetryTimeouts: [1000,2000,4000], connection: {blockUI: false,context: '/', sendReceiveUpdatesURI: '/block/send-receive-updates',pingURI: '/block/ping',receiveUpdatesURI: '/block/receive-updates',receiveUpdatedViewsURI: '/block/receive-updated-views',heartbeat: {interval: 50000,timeout: 30000,retries: 3},timeout: 60000},messages: {sessionExpired: 'User Session Expired',connectionLost: 'Network Connection Interrupted',serverError: 'Server Internal Error',description: 'To reconnect click the Reload button on the browser or click the button below',buttonText: 'Reload'}}, container);</script>
+<div id="mainpage" style="display:none;"><div id="mh"><div id="header"><div id="top-breadcrumb"><div id="top-breadcrumb-pan"><span class="breadcrumb"><a href="https://www.confia.com.sv:443/" title=""><img alt="" height="14" src="https://www.confia.com.sv:443/ficheros/breadcrumb-home.jpg" style="margin-top: 8px" width="14" /></a></span></div>
+<div id="top-breadcrumb-1"><div id="top-breadcrumb-2"><a href="https://www.confia.com.sv:443/ventanas/facebook.html" onclick="return hs.htmlExpand(this, { objectType: &#39;iframe&#39;, headingText: &#39;AFP CONFIA | Por el ma&ntilde;ana que tu quieres&#39; } )" style="width: 99px; height: 28px; position: relative; z-index: 6;"><img alt="Siguenos en Facebook" border="0" height="28" src="https://www.confia.com.sv:443/ficheros/facebook-top.jpg" width="99" /></a></div></div></div>
+<div id="head"><div id="logo-ppal"><a href="https://www.confia.com.sv:443/"><img alt="AFP CONFIA - Por el ma&ntilde;ana que t&uacute; quieres" height="72" src="https://www.confia.com.sv:443/ficheros/logo-ppal-confia.jpg" title="AFP CONFIA - Por el ma&ntilde;ana que t&uacute; quieres" width="209" /></a></div>
+<div id="fh-01"><div id="fh-01-1"><div id="fh-01-2"></div><img alt="CONFIAVirtual" height="74" src="https://www.confia.com.sv:443/ficheros/img-confia-virtual.jpg" style="float: right; margin-top: 13px" width="43" /><img alt="" height="100" src="https://www.confia.com.sv:443/ficheros/line1.jpg" style="margin-right: 17px; float: right; margin-left: 21px" width="2" /></div>
+<div id="fh-03-login"><img alt="Ingresar a Tu Cuenta" src="https://www.confia.com.sv:443/ficheros/title-ingresar-cuenta.jpg" style="float: right" /><div id="cierreSesion"><div id="fh-03-login-cuenta"><a class="anchorclass" href="#" rel="submenu2"><img height="28" src="https://www.confia.com.sv:443/ficheros/img-seleccionar-cuenta.jpg" width="197" /></a></div>
+<p style="width: 85%">
+							Si aún no tienes cuenta,<a href="https://www.confia.com.sv:443/ventanas/registro.htm" onclick="return hs.htmlExpand(this, { objectType: &#39;iframe&#39;, headingText: &#39;AFP CONFIA l Por el ma&ntilde;ana que tu quieres&#39; } )"> ¡Registrate acá!</a></p></div>
+<p><a href=" https://www.confia.com.sv:443/ventanas/reasignacion.htm" onclick="return hs.htmlExpand(this, { objectType: &#39;iframe&#39;, headingText: &#39;AFP CONFIA l Por el ma&ntilde;ana que tu quieres&#39; } )">¿Olvidaste tu Contraseña?</a></p></div></div>
+<div id="fh-02"><div class="search-top"><form action="javascript:;" class="iceFrm" enctype="application/x-www-form-urlencoded" id="form2" method="post" onsubmit="return false;"><script id="form2script" type="text/javascript">$element(document.getElementById('form2')).captureAndRedirectSubmit();</script><input name="form2" type="hidden" value="form2" /><input name="icefacesCssUpdates" type="hidden" value="" /><div id="form2:stateSavingMarker" style="width:0px;height:0px;"><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="1" /><input name="javax.faces.RenderKitId" type="hidden" value="ICEfacesRenderKit" /></div>
+<label><span><input autocomplete="off" class="iceInpTxt keywords" id="form2:q" maxlength="50" name="form2:q" onblur="if(this.value==&#39;&#39;) this.value=&#39;Buscar tema de inter&eacute;s&#39;;setFocus(&#39;&#39;);" onclick="if(this.value==&#39;Buscar tema de inter&eacute;s&#39;) this.value=&#39;&#39;;" onfocus="setFocus(this.id);" onkeypress="iceSubmit(form,this,event);" onmousedown="this.focus();" type="text" value="Buscar tema de inter&eacute;s" /></span>
+<a class="iceCmdLnk button" href="javascript:;" id="form2:b" onblur="setFocus(&#39;&#39;);" onclick="var form=formOf(this);form[&#39;form2:_idcl&#39;].value=&#39;form2:b&#39;;return iceSubmit(form,this,event);" onfocus="setFocus(this.id);"><img alt="" class="iceGphImg" id="form2:j_id58" src="https://www.confia.com.sv:443/ficheros/bg-buscador-top2.jpg" style="boder:0" /></a></label>
+<div id="form2hdnFldsDiv" style="display:none;"><input name="form2:_idcl" type="hidden" /></div></form></div></div></div></div>
+<div class="anylinkcss2" id="submenu2"><ul><li><a href="https://www.confia.com.sv:443/../Virtual/general/login.jsf">Afiliados</a></li>
+<li><a href="https://www.confia.com.sv:443/../Virtual/general/login.jsf">Pensionados</a></li>
+<li><a href="https://www.confia.com.sv:443/../Virtual/general/login.jsf">Empresas</a></li></ul></div></div>
+<div id="wrapper"><div id="contenido-ppal"><br /><br /><table align="center" bgcolor="#990000" border="0" cellpadding="7" cellspacing="1" height="136" width="98%"><tbody><tr><td bgcolor="#FFC1C1"><div align="center"><p></p>
+<p><span class="Estilo3"><span class="textBlackSmall">Lo lamentamos, pero la página no pudo ser encontrada. Puede que el enlace no funcione o que se ingresó incorrectamente la dirección (URL).</span></span></p></div>
+<div align="right"><br /><span class="Estilo2"><font size="1"></font></span></div></td></tr></tbody></table></div></div>
+<div id="footer"><div id="foot"><div id="ff-02"><div id="ff-02-1"><div id="ff-02-2"><div id="ff-02-3">afiliados</div>
+<div id="ff-02-3" style="padding-left: 0px; width: 250px">pensionados</div>
+<div id="ff-02-3" style="padding-left: 0px; width: 228px">empresas</div>
+<div id="ff-02-3" style="padding-left: 0px; width: 192px">atención
+							al cliente</div></div>
+<div id="ff-02-4"><div id="ff-02-3"><div id="list-linkfooter01"><ul><li><a href="https://www.confia.com.sv:443/AFILIADOS/6/afiliarte-a-afp-confia">Afiliarte a AFP CONFIA</a></li>
+<li><a href="https://www.confia.com.sv:443/AFILIADOS/21/afiliacion-como-trabajador-independiente">Afiliaci&oacute;n como Trabajador Independiente</a></li>
+<li><a href="https://www.confia.com.sv:443/AFILIADOS/22/la-distribucion-de-tus-cotizaciones">La Distribuci&oacute;n de tus Cotizaciones</a></li>
+<li><a href="https://www.confia.com.sv:443/AFILIADOS/23/tus-documentos">Tus documentos</a></li>
+<li><a href="https://www.confia.com.sv:443/AFILIADOS/24/seguro-de-invalidez-y-sobrevivencia">Seguro de Invalidez y Sobrevivencia</a></li>
+<li><a href="https://www.confia.com.sv:443/AFILIADOS/25/beneficios-por-retiro">Beneficios por Retiro</a></li>
+<li><a href="https://www.confia.com.sv:443/AFILIADOS/41/beneficios-por-invalidez">Beneficios por Invalidez</a></li>
+<li><a href="https://www.confia.com.sv:443/AFILIADOS/42/beneficios-por-sobrevivencia">Beneficios por Sobrevivencia</a></li></ul></div></div>
+<div id="ff-02-3" style="padding-left: 0px; width: 250px"><div id="list-linkfooter01"><ul><li><a href="https://www.confia.com.sv:443/PENSIONADOS/44/tipos-de-pension">Tipos de Pensi&oacute;n</a></li>
+<li><a href="https://www.confia.com.sv:443/PENSIONADOS/45/pensiones-y-beneficios">Pensiones y Beneficios</a></li>
+<li><a href="https://www.confia.com.sv:443/PENSIONADOS/46/forma-de-pago-de-pension">Forma de Pago de Pensi&oacute;n</a></li>
+<li><a href="https://www.confia.com.sv:443/PENSIONADOS/47/control-de-sobrevivencia">Control de Sobrevivencia</a></li>
+<li><a href="https://www.confia.com.sv:443/PENSIONADOS/49/continuar-cotizacion-despues-de-cumplir-la-edad-legal">Continuar cotizaci&oacute;n despu&eacute;s de cumplir la edad legal</a></li></ul></div></div>
+<div id="ff-02-3" style="padding-left: 0px; width: 220px"><div id="list-linkfooter01"><ul><li><a href="https://www.confia.com.sv:443/EMPRESAS/51/inscripcion-de-empresas">Inscripci&oacute;n de empresas</a></li>
+<li><a href="https://www.confia.com.sv:443/EMPRESAS/55/codigos-de-observacion-en-planilla">C&oacute;digos de observaci&oacute;n en planilla</a></li>
+<li><a href="https://www.confia.com.sv:443/EMPRESAS/57/ingreso-base-y-tasas-de-cotizacion">Ingreso base y tasas de cotizaci&oacute;n</a></li>
+<li><a href="https://www.confia.com.sv:443/EMPRESAS/58/cotizacion-por-empleados-pensionados">Cotizaci&oacute;n por empleados pensionados</a></li>
+<li><a href="https://www.confia.com.sv:443/EMPRESAS/59/calendario-de-pagos">Calendario de Pagos</a></li>
+<li><a href="https://www.confia.com.sv:443/EMPRESAS/60/donde-pagar-la-planilla-previsional">Donde pagar la planilla previsional</a></li>
+<li><a href="https://www.confia.com.sv:443/EMPRESAS/61/pagos-en-exceso">Pagos en exceso</a></li>
+<li><a href="https://www.confia.com.sv:443/EMPRESAS/62/insuficiencia-de-pago">Insuficiencia de pago</a></li></ul></div></div>
+<div id="ff-02-3" style="padding-left: 0px; width: 192px"><div id="list-linkfooter01"><ul><li><a href="https://www.confia.com.sv:443/ATENCION/65/registrate-en-confia-virtual">Reg&iacute;strate en CONFIA Virtual</a></li>
+<li><a href="https://www.confia.com.sv:443/ATENCION/66/contactenos">Cont&aacute;ctenos</a></li>
+<li><a href="https://www.confia.com.sv:443/ATENCION/67/preguntas-frecuentes">Preguntas Frecuentes</a></li>
+<li><a href="https://www.confia.com.sv:443/ATENCION/68/mapa-del-sitio">Mapa del Sitio</a></li>
+<li><a href="https://www.confia.com.sv:443/ATENCION/3373/sitios-de-interes-">Sitios de Inter&eacute;s </a></li>
+<li><a href="https://www.confia.com.sv:443/ATENCION/3457/canales-de-atencion">Canales de Atenci&oacute;n</a></li></ul></div>
+<a href="https://www.confia.com.sv:443/ventanas/facebook.html" onclick="return hs.htmlExpand(this, { objectType: &#39;iframe&#39;, headingText: &#39;AFP CONFIA | Por el ma&ntilde;ana que tu quieres&#39; } )" style="width: 99px; height: 28px; position: relative; z-index: 6;"><img alt="Siguenos en Facebook" height="28" src="https://www.confia.com.sv:443/ficheros/img-facebook-foot.png" style="margin-top: 15px; display: inline" width="104" /></a></div></div></div>
+<div id="ff-03"><img alt="Contacto Confia - servicioalcliente@confia.com" height="44" src="https://www.confia.com.sv:443/ficheros/img-contacto-confia.jpg" width="194" /><img alt="" height="40" src="https://www.confia.com.sv:443/ficheros/img-confia-ahora.jpg" width="168" /><img alt="Confia Tel 2267-7777" height="44" src="https://www.confia.com.sv:443/ficheros/img-confiatel2.jpg" style="margin: 0px" width="136" /></div></div></div>
+<div id="footer2"><div id="ff-01"><div id="ff-04"><div class="menu-secundario"><ul><li><a href="https://www.confia.com.sv:443/" title="Inicio">Inicio |</a></li>
+<li><a href="https://www.confia.com.sv:443/INFORMACION-GENERAL/3593/terminos-y-condiciones" title="T&eacute;rminos y Condiciones">Terminos y
+								Condiciones |</a></li>
+<li><a href="https://www.confia.com.sv:443/ATENCION/3373/sitios-de-interes-" title="Sitios de inter&eacute;s">Sitios de interés |</a></li>
+<li><a href="https://www.confia.com.sv:443/ATENCION/68/mapa-del-sitio" title="Mapa del sitio">Mapa del Sitio |</a></li>
+<li><a href="https://www.confia.com.sv:443/ATENCION/66/contactenos" title="Contactenos"> Contáctenos</a></li></ul></div>
+<p>© Copyright 1998 -2017, Derechos Reservados - El Salvador</p></div>
+<div id="ff-05"><div class="search"><form action="javascript:;" class="iceFrm" enctype="application/x-www-form-urlencoded" id="frmft" method="post" onsubmit="return false;"><script id="frmftscript" type="text/javascript">$element(document.getElementById('frmft')).captureAndRedirectSubmit();</script><input name="frmft" type="hidden" value="frmft" /><input name="icefacesCssUpdates" type="hidden" value="" /><div id="frmft:stateSavingMarker" style="width:0px;height:0px;"><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="1" /><input name="javax.faces.RenderKitId" type="hidden" value="ICEfacesRenderKit" /></div>
+<label><span><input autocomplete="off" class="iceInpTxt keywords" id="frmft:q2" maxlength="50" name="frmft:q2" onblur="if(this.value==&#39;&#39;) this.value=&#39;Buscar tema de inter&eacute;s&#39;;setFocus(&#39;&#39;);" onclick="if(this.value==&#39;Buscar tema de inter&eacute;s&#39;) this.value=&#39;&#39;;" onfocus="setFocus(this.id);" onkeypress="iceSubmit(form,this,event);" onmousedown="this.focus();" type="text" value="Buscar tema de inter&eacute;s" /></span>
+<a class="iceCmdLnk button" href="javascript:;" id="frmft:bf" onblur="setFocus(&#39;&#39;);" onclick="var form=formOf(this);form[&#39;frmft:_idcl&#39;].value=&#39;frmft:bf&#39;;return iceSubmit(form,this,event);" onfocus="setFocus(this.id);"><img alt="" class="iceGphImg" id="frmft:j_id203" src="https://www.confia.com.sv:443/ficheros/bg-buscador-foot2.jpg" style="boder:0" /></a></label>
+<div id="frmfthdnFldsDiv" style="display:none;"><input name="frmft:_idcl" type="hidden" /></div></form></div><img alt="AFP Confia - Por el ma&ntilde;ana que t&uacute; quieres" height="51" src="https://www.confia.com.sv:443/ficheros/logo-foot-confia.jpg" style="float: right; margin-top: 17px; margin-right: 10px; display: inline" width="147" /></div></div></div></div></div>
+<div id="errorpage" style="display:none;"><p style="font-weight: bold; color:#000000"><img src="https://www.confia.com.sv:443/images/MsjJavaScript.gif" /></p>
+<p><a href="https://www.confia.com.sv:443/images/ManualActivacionaJavaScript.pdf" style="border:none" target="_blank"><img src="https://www.confia.com.sv:443/images/MsjJavaScriptLink.gif" style="border:none" /></a></p></div>
+<script id="xTn4UNO7hcF4aZnRQEKqAA:1:dynamic-code" type="text/javascript"></script>
+<noscript><meta content="0;url=/xmlhttp/javascript-blocked" http-equiv="refresh" /></noscript></body></html>

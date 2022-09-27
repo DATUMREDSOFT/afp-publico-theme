@@ -1,0 +1,12 @@
+#sitio-web {
+    .portlet-search {
+        .icon-monospaced {
+            a {
+                color:#fff;
+                &:hover {
+                    color: #10336C;
+                }
+            }
+        }
+    }
+}

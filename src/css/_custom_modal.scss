@@ -1,0 +1,394 @@
+body.modal-open {
+    #sitio-web {
+        .modal.custom-modal {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    }
+}
+
+body #sitio-web {
+    .visible-si-editable {
+        display: none;
+    }
+
+    .portlet-content-editable {
+        .visible-si-editable {
+            display: block;
+            padding: 10px;
+            background-color: rgb(255, 171, 129);
+            border: solid 1px darkred;
+            border-radius: 5px;
+
+            strong {
+                color: darkred;
+            }
+
+            a {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .custom-modal.modal {
+        display: none;
+        margin: 0 auto;
+        z-index: 1210;
+
+    }
+
+
+
+    .modal-content {
+        background-color: transparent;
+    }
+
+    .modal-footer {
+
+        background-color: #dbe5ef;
+    }
+
+    .custom-modal {
+        .modal-header {
+            border: 0;
+            background-color: #dbe5ef;
+            color: #285875;
+            height: auto;
+
+            .modal-title {
+                padding-left: 35px;
+                background-image: url(../images/ico-confia.png);
+                background-repeat: no-repeat;
+                background-position: center left;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+    .modal-body {
+        background-color: #fff;
+        border-left: solid 8px #dbe5ef;
+        border-right: solid 8px #dbe5ef;
+    }
+
+
+    // MODAL ENLACE A SITIO EXTERNO
+    .custom-modal.modal-externo {
+        .modal-enlace-sitio-externo {
+            background-image: url(../images/bg-link.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+
+            .contenido-modal {
+                padding-top: 103px;
+                padding-left: 35px;
+                padding-right: 35px;
+                min-height: 394px;
+
+                .boton-ir {
+                    padding-top: 50px;
+                }
+
+                .cierre {
+                    position: fixed;
+                    bottom: 10px;
+                }
+            }
+
+        }
+    }
+
+    // FACEBOOK 
+    .custom-modal {
+        .visita-facebook {
+            min-height: 400px;
+            background-image: url(../images/bg-facebook.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            color: #fff;
+            padding: 40px;
+
+            a {
+                color: #fff;
+
+                &.btn-facebook {
+                    position: relative;
+                    top: 160px;
+                    background-image: url(../images/bot-facebook-modal.jpg);
+                    background-position: top;
+                    background-size: cover;
+                    height: 48px;
+                    width: 200px;
+                    display: block;
+
+                    &:hover {
+                        background-position: bottom;
+                    }
+                }
+            }
+
+            .mensaje-facebook {
+                position: relative;
+                top: 70px;
+            }
+
+            .enlace-txt-facebook {
+                position: relative;
+                top: 165px;
+            }
+        }
+    }
+
+    //MODAL AGENCIAS 
+    .custom-modal.modal-agencias {
+        .modal-body {
+            .modal-contenido-central {
+                background-image: url(../images/bg-agencias.jpg);
+                background-position: bottom center;
+                background-repeat: no-repeat;
+                padding: 20px;
+            }
+        }
+    }
+
+
+    // MODAL CONTRASENA
+
+    .custom-modal.modal-recuperar-pass {
+        .modal-body {
+            background-color: #edf4f8;
+            min-height: 330px;
+
+            .modal-contenido-central {
+                background-image: url(../images/bg-ventana-reasignacion.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 152px 20px 20px;
+
+                h2 {
+                    text-transform: uppercase;
+                }
+
+                .bot-big {
+                    font-size: 0.75rem;
+
+                    span {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // MODAL SELECCIONAR CONTACTENOS 
+
+    .custom-modal.modal-seleccionar-contacto {
+        .modal-body {
+            background-color: #edf4f8;
+            min-height: 330px;
+
+            .modal-contenido-central {
+                background-image: url(../images/bg-ventana-contactenos.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 152px 20px 20px;
+
+                h2 {
+                    text-transform: uppercase;
+                }
+
+                .bot-big {
+                    font-size: 0.75rem;
+
+                    span {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // MODAL REGISTRARSE
+
+    .custom-modal.modal-registrarse {
+        .modal-body {
+            background-color: #edf4f8;
+
+            .modal-contenido-central {
+                background-image: url(../images/bg-ventana-ppal.jpg);
+                background-position: center;
+                padding: 242px 20px 20px;
+                background-repeat: no-repeat;
+
+                h2 {
+                    text-transform: uppercase;
+                }
+
+                .bot-big {
+                    font-size: 0.75rem;
+
+                    span {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // PROMOCIONES
+
+    .custom-modal.modal-promociones {
+        .modal-header {
+            background-color: #FDAA17;
+            border-color: #FDAA17;
+            color: #fff;
+        }
+
+        .modal-body {
+            border-left: solid 8px #FDAA17;
+            border-right: solid 8px #FDAA17;
+            padding: 20px;
+        }
+
+        .modal-footer {
+            background-color: #FDAA17;
+            border-top: solid 1px #FDAA17;
+        }
+
+        .promocion-encabezado {
+            background-image: url(../images/confia-ahora-promo.jpg);
+            background-position: right center;
+            background-repeat: no-repeat;
+            border-bottom: solid 3px #FDAA17;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            .descuento {
+                color: #FDAA17;
+
+                .valor {
+                    font-size: 2.6rem;
+                    font-weight: 700;
+                }
+
+                text-align:left;
+            }
+
+            text-align:center;
+        }
+
+        .promocion-contenido {
+            background-color: #fff;
+            padding: 20px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    #sitio-web {
+        .custom-modal {
+            .modal-dialog {
+                max-width: 540px;
+                position: relative;
+            }
+            &.modal-lg {
+                max-width: 800px;
+                .modal-dialog {
+                    max-width: 800px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    #sitio-web {
+        .custom-modal.modal-agencias {
+            .modal-body {
+                padding-top: 0;
+                padding-bottom: 0;
+
+                .modal-contenido-central {
+                    background-image: none;
+                }
+            }
+        }
+        // MODAL CONTRASENA
+
+        .custom-modal.modal-recuperar-pass {
+            .modal-body {
+                min-height: 100%;
+
+                .modal-contenido-central {
+                    background-size: contain;
+                    background-position: center top !important;
+                    padding: 125px 20px 20px 20px;
+                    padding-top: 125px !important;
+
+                    .txt-azul {
+                        margin-bottom: 20px !important;
+                    }
+                }
+            }
+        }
+
+        // MODAL CONTRASENA
+
+        .custom-modal.modal-seleccionar-contacto {
+            .modal-body {
+                min-height: 100%;
+
+                .modal-contenido-central {
+                    background-size: contain;
+                    background-position: center top !important;
+                    padding: 125px 20px 20px 20px;
+                    padding-top: 125px !important;
+
+                    .txt-azul {
+                        margin-bottom: 20px !important;
+                    }
+                }
+            }
+        }
+
+        // MODAL REGISTRARSE
+        .custom-modal.modal-registrarse {
+            .modal-body {
+                .modal-contenido-central {
+                    background-size: contain
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:575.98px) {
+    .custom-modal {
+        .visita-facebook {
+            .mensaje-facebook {
+                top: 80px;
+            }
+        }
+
+        &.modal-externo {
+            .modal-enlace-sitio-externo {
+                background-position: left;
+            }
+        }
+    }
+}
+
+@media(max-width:479.98px) {
+   body #sitio-web {
+        .custom-modal {
+            .visita-facebook {
+                background-repeat: no-repeat;
+                background-position: left;
+                background-size: cover;
+            }
+        }
+    }
+}

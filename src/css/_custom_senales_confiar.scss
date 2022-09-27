@@ -1,0 +1,66 @@
+#sitio-web {
+    .senales-confiar {
+        height: 455px;
+        background-image: url(../images/bg-senales-confiar.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-color: #005e9a;
+        border-radius:10px;
+        color: #fff;
+        .mensaje-movil {
+            display:none;
+        }
+        .wrap-contenido {
+            max-width:400px;
+            position:relative;
+            top:195px;
+            left:30px;
+        }
+        .numero {
+            font-size:1.5rem;
+            letter-spacing: 39px;
+            text-align:center;
+            padding: 0 37px;
+            p {
+                margin: 0;
+            }
+        }
+        
+        .fecha {
+            font-weight: 700;
+            text-transform: uppercase;
+            padding:10px 20px;
+            font-size:1rem;
+        }
+        .contenido {
+            padding-top:25px;
+        }
+    }
+}
+
+
+@media(max-width: 767.98px){
+    #sitio-web {
+        .senales-confiar {
+            height: auto;
+            padding: 149px 20px 20px;
+            background-image:url(../images/bg-senales-confiar-movil.jpg);
+            background-position: top center;
+            background-color: #005e9a;
+            border-radius: 10px;
+            .mensaje-movil {
+                display: block;
+                font-weight:700;
+            }
+            .wrap-contenido {
+                position:static;
+            }
+            .numero {
+                letter-spacing: normal;
+                padding:10px 20px;
+                border: solid 1px #fff;
+                border-radius: 10px;
+            }
+        }
+    }
+}

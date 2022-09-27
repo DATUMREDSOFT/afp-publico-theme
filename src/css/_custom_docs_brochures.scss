@@ -1,0 +1,41 @@
+body #sitio-web {
+    .docs-brochures {
+        background-image: url(../images/bg-bibloteca-brochure.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 161px;
+        padding-left:20px;
+        padding-right:20px;
+        h3 {
+            padding-left: 24px;
+            padding-top:15px;
+            padding-bottom:15px;
+        }
+
+        a.brochure {
+            font-size: 0.75rem;
+            img {
+                float: left;
+                margin-right: 10px;
+                
+            }
+        }
+    }
+}
+
+
+@media(max-width:767.97px) {
+    body #sitio-web {
+        .docs-brochures {
+            height:auto;
+            background-image: none;
+            background-color: #f4f9fc;
+            border-radius:10px;
+            padding:20px;
+            box-shadow:5px 5px 3px darken(#f4f9fc,20%);
+            h3 {
+                padding-left:0;
+            }
+        }
+    }
+}

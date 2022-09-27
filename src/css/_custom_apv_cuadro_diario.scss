@@ -1,0 +1,461 @@
+#sitio-web #cuadro-diario-reporte {
+  .container-fluid {
+    max-width: 800px;
+  }
+
+  .mensaje-error {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #aaa;
+    text-align: center;
+  }
+
+  .tipo1 {
+    margin-top: 20px;
+
+    .titulo-resultado-diario {
+      .titulo-resultado {
+        margin: 0;
+        padding: 20px;
+        background: #ddd;
+        background: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
+        background: -webkit-linear-gradient(top, #fff 0%, #ddd 100%);
+        background: linear-gradient(to bottom, #fff 0%, #ddd 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
+        color: rgba(0, 63, 116, 1);
+        border-bottom: solid 5px rgba(0, 63, 116, 1);
+        border-radius: 20px 20px 0 0;
+        text-transform: uppercase;
+        font-size: 1rem;
+        /* margin: 0;
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        background-color: #00c2e7;
+        color: rgba(0, 63, 116, 1); */
+
+      }
+    }
+
+    .resultado-diario-apv {
+      padding: 20px;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 3px 3px 6px #aaa;
+      background-color: #2271af;
+    }
+
+    .dato {
+      padding: 5px;
+      text-align: center;
+
+      .etiqueta {
+        text-transform: uppercase;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+        background-color: #009dda;
+        font-size: 13px;
+        padding: 5px 0;
+      }
+
+      .valor {
+        font-size: 1.5rem;
+        padding: 5px;
+        border-radius: 0 0 20px 20px;
+        color: #fff;
+        background-color: rgb(0, 63, 116);
+        background: -moz-linear-gradient(left, rgba(48, 136, 207, 1) 0%, rgba(0, 63, 116, 1) 100%);
+        background: -webkit-linear-gradient(left, rgba(48, 136, 207, 1) 0%, rgba(0, 63, 116, 1) 100%);
+        background: linear-gradient(to right, rgba(48, 136, 207, 1) 0%, rgba(0, 63, 116, 1) 100%);
+      }
+
+      &.resaltado {
+        .valor {
+          background-color: #00cbff;
+          background: -moz-linear-gradient(left, #00cbff 0%, #1b3a6a 100%);
+          background: -webkit-linear-gradient(left, #00cbff 0%, #1b3a6a 100%);
+          background: linear-gradient(to right, #00cbff 0%, #1b3a6a 100%);
+          color: #fff;
+        }
+
+        .etiqueta {
+          color: #1b3a6a;
+          background-color: #00cbff;
+
+        }
+      }
+    }
+  }
+
+
+  .tipo2 {
+    margin-top: 20px;
+
+    .titulo-resultado-diario {
+      .titulo-resultado {
+        margin: 0;
+        padding: 20px;
+        background: #E58823;
+        background: -moz-linear-gradient(left, rgb(249, 208, 105) 0%, darken(#E58823, 10%) 100%);
+          background: -webkit-linear-gradient(left, rgb(249, 208, 105) 0%, darken(#E58823, 10%) 100%);
+          background: linear-gradient(to right, rgb(249, 208, 105) 0%, darken(#E58823, 10%) 100%);
+          color: darken(#E58823, 40%);
+        // background: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
+        // background: -webkit-linear-gradient(top, #fff 0%, #ddd 100%);
+        // background: linear-gradient(to bottom, #fff 0%, #ddd 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
+        color: rgb(255, 255, 255);
+        //border-bottom: solid 5px rgba(0, 63, 116, 1);
+        border-radius: 20px 20px 0 0;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+      }
+    }
+
+    .resultado-diario-apv {
+      background-color: #98999D;
+      // background-color: rgb(0, 63, 116);
+      // background: -moz-linear-gradient(left, rgba(48, 136, 207, 1) 0%, rgba(0, 63, 116, 1) 100%);
+      // background: -webkit-linear-gradient(left, rgba(48, 136, 207, 1) 0%, rgba(0, 63, 116, 1) 100%);
+      // background: linear-gradient(to right, rgba(48, 136, 207, 1) 0%, rgba(0, 63, 116, 1) 100%);
+      border-radius: 0 0 10px 10px;
+      box-shadow: 3px 3px 6px #aaa;
+    }
+
+    .dato {
+      text-align: center;
+      border-bottom: solid 1px rgb(0, 63, 116);
+      margin-left: -15px;
+      margin-right: -15px;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .wrap {
+        padding: 10px;
+      }
+
+      .etiqueta {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: left;
+        font-size: 1.25rem;
+        text-shadow: 1px 1px 2px #111;
+        display: flex;
+        align-items: center;
+      }
+
+      .valor {
+        font-size: 2rem;
+        padding: 5px;
+        color: #fff;
+        text-align: right;
+      }
+
+      &.resaltado {
+        .valor {
+          background-color: #1360AE;
+          // background: -moz-linear-gradient(left, rgb(255, 251, 1) 0%, darken(#FBB516, 10%) 100%);
+          // background: -webkit-linear-gradient(left, rgb(255, 251, 1) 0%, darken(#FBB516, 10%) 100%);
+          // background: linear-gradient(to right, rgb(255, 251, 1) 0%, darken(#FBB516, 10%) 100%);
+          // color: darken(#FBB516, 40%);
+          //font-weight: 700;
+        }
+
+        .etiqueta {
+          background-color: #1F99DA;
+
+        }
+      }
+    }
+  }
+
+
+
+  .tipo3 {
+    margin-top: 20px;
+
+    .titulo-resultado-diario {
+      .titulo-resultado {
+        margin: 0;
+        padding: 20px;
+        background-color: rgb(0, 63, 116);
+        background: -moz-linear-gradient(left, rgba(48, 136, 207, 1) 0%, rgba(0, 63, 116, 1) 100%);
+        background: -webkit-linear-gradient(left, rgba(48, 136, 207, 1) 0%, rgba(0, 63, 116, 1) 100%);
+        background: linear-gradient(to right, rgba(48, 136, 207, 1) 0%, rgba(0, 63, 116, 1) 100%);
+        color: #fff;
+        border-radius: 20px 20px 0 0;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        border-bottom: solid 3px #FBB516;
+        text-align: center;
+        font-weight: 400;
+      }
+    }
+
+    .resultado-diario-apv {
+      /* background-color: #00c2e7;
+      background: -moz-linear-gradient(left, #00c2e7 0%, rgba(0, 63, 116, 1) 100%);
+      background: -webkit-linear-gradient(left, #00c2e7 0%, rgba(0, 63, 116, 1) 100%);
+      background: linear-gradient(to right, #00c2e7 0%, rgba(0, 63, 116, 1) 100%); */
+
+
+      border-radius: 0 0 20px 20px;
+      box-shadow: 3px 3px 6px #aaa;
+    }
+
+    .dato {
+      text-align: center;
+      background-color: #fff;
+      background: -moz-linear-gradient(bottom, rgb(255, 255, 255) 20%, rgb(201, 201, 201) 100%);
+      background: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 20%, rgb(201, 201, 201) 100%);
+      background: linear-gradient(to top, rgb(255, 255, 255) 20%, rgb(200, 200, 200) 100%);
+
+      &:last-child {
+        border-bottom: 0;
+        border-radius: 0 0 20px 20px;
+      }
+
+      .etiqueta {
+        color: #555;
+        ;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+        font-size: 1.25rem;
+        padding: 5px 0;
+        // border-top: solid 1px rgb(219, 219, 219);
+        // border-bottom: solid 1px rgb(219, 219, 219);
+        /*background-color: #fff;
+        background: -moz-linear-gradient(-45deg, rgb(233, 233, 233) 0%, rgb(219, 219, 219) 100%);
+        background: -webkit-linear-gradient(-45deg, rgb(233, 233, 233) 0%, rgb(219, 219, 219) 100%);
+        background: linear-gradient(135deg, rgb(233, 233, 233) 0%, rgb(219, 219, 219) 100%);*/
+      }
+
+      .valor {
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        color: rgb(0, 63, 116);
+        padding: 10px 0;
+      }
+
+      &.resaltado {
+        .valor {
+          font-weight: 700;
+          font-size: 2.5rem;
+        }
+        .etiqueta {}
+      }
+    }
+  }
+
+
+  // Animation
+
+  .puff-in-hor {
+    -webkit-animation: puff-in-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: puff-in-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  }
+
+  .slide-in-top {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1s;
+    animation-duration: 1s;
+  }
+
+  .swing-in-top-fwd {
+    -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation-delay: 2s;
+    animation-duration: 1s;
+  }
+
+  .text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation-delay: 2s;
+    animation-duration: 1s;
+  }
+
+  /* ----------------------------------------------
+   * Generated by Animista on 2019-9-14 11:56:57
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+
+  /**
+   * ----------------------------------------
+   * animation puff-in-hor
+   * ----------------------------------------
+   */
+  @-webkit-keyframes puff-in-hor {
+    0% {
+      -webkit-transform: scaleX(2);
+      transform: scaleX(2);
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes puff-in-hor {
+    0% {
+      -webkit-transform: scaleX(2);
+      transform: scaleX(2);
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
+  /* ----------------------------------------------
+   * Generated by Animista on 2019-9-14 12:5:13
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+
+  /**
+   * ----------------------------------------
+   * animation slide-in-top
+   * ----------------------------------------
+   */
+  @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* ----------------------------------------------
+   * Generated by Animista on 2019-9-14 12:13:26
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+
+  /**
+   * ----------------------------------------
+   * animation swing-in-top-fwd
+   * ----------------------------------------
+   */
+  @-webkit-keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+      transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+
+  @keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+      transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+
+  /* ----------------------------------------------
+   * Generated by Animista on 2019-9-14 12:24:16
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+  /**
+   * ----------------------------------------
+   * animation text-focus-in
+   * ----------------------------------------
+   */
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+}

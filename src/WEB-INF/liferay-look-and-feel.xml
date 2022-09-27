@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.2.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_7_2_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>7.2.0+</version>
+	</compatibility>
+	<theme id="afp-publico" name="afp-publico">
+		<template-extension>ftl</template-extension>
+		<portlet-decorator id="barebone" name="Barebone">
+			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="borderless" name="Borderless">
+			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="decorate" name="Decorate">
+			<default-portlet-decorator>true</default-portlet-decorator>
+			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="barebone-nomargins" name="Barebone sin márgenes">
+			<portlet-decorator-css-class>portlet-barebone-nm</portlet-decorator-css-class>
+		</portlet-decorator>
+		<settings>
+			<setting configurable="true" key="imagen-logo-pie" type="text" value="/o/afp-confia-theme/images/logo-foot-confia.jpg" />
+			<setting configurable="true" key="texto-copyright" type="text" value="&copy; Copyright 1998 -2018, Derechos Reservados - El Salvador" />
+			<setting configurable="true" key="id-modal-facebook" type="text" value="#modalFacebook" />
+			<setting configurable="true" key="id-modal-registrate" type="text" value="#modalRegistrate" />
+			<setting configurable="true" key="id-modal-password" type="text" value="#modalContrasena" />			
+    		<setting configurable="true" key="phishing-script" options="true,false" type="select" value="true" />
+			<setting configurable="true" key="fechaini" type="text" value="inicioapv"/>
+
+		<!--<setting configurable="true" key="ws-consultar-datos" type="text" value="Url de servicio"/>
+		<setting configurable="true" key="ws-consultar-datos-2" type="text" value="Url de otro servicio"/>-->
+			
+		</settings>
+	</theme>
+</look-and-feel>

@@ -1,0 +1,105 @@
+body {
+    #sitio-web {
+        #footerPrincipal {
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        #footbg {
+            background-image: url(../images/bg-footer.jpg);
+            background-repeat: repeat-x;
+            background-position: center top;
+            background-color: #003f74;
+        }
+
+        #footTop {
+            background-image: url(../images/bg-box-foot1.jpg), url(../images/bg-box-foot2.png), url(../images/bg-box-foot3.jpg);
+            background-repeat: no-repeat, no-repeat, repeat-y;
+            background-position: center top, center bottom, center;
+            padding-bottom: 15px;
+
+            #footFacebook {
+                margin-top: 15px;
+            }
+
+            h2 {
+                font-size: 11px;
+                margin: 0;
+                text-transform: uppercase;
+                color: #0D94D9;
+                font-weight: 700;
+                padding: 10px 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        #footMid {
+            padding-top: 20px;
+            text-align: right;
+
+            img {
+                display: inline-block;
+                padding: 0 10px;
+
+                &:last-child {
+                    padding: 0;
+                }
+            }
+        }
+
+        #footBottom {
+            padding-bottom: 10px;
+            padding-top: 15px;
+
+            .logo {
+                float: right;
+            }
+
+            .row {
+                &:last-child {
+                    margin-top: 20px;
+                }
+            }
+
+            .search-input-wrapper {
+                position: relative;
+                top: 3px;
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    body {
+        #sitio-web {
+            #footbg {
+                background-image: url(../images/bg-footer-movil.jpg);
+                background-repeat: repeat-x;
+                background-position: center top;
+                background-color: #003f74;
+            }
+            #footMid {
+                padding-top: 0;
+
+                img {
+                    display: block;
+                    padding: 0;
+                    margin: 0 auto 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            #footBottom {
+                .search-input-wrapper {
+                    position: static;
+                    padding: 30px 0 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+body #sitio-web {
+    .confia-gerencial {
+        .bloque-informacion {
+            margin-left: 6px;
+        }
+        .central {
+            background-image:url(../images/ProgramaGerencialFisherman2018.jpg);
+            background-repeat: no-repeat;
+            background-position:bottom right;
+            background-size: contain;
+            height:467px;
+            .contenido-central {
+                min-height: 200px;
+                background-color: transparent;
+                position:relative;
+                width:300px;
+                top:120px;
+                left:55px;
+                overflow-y: auto;
+                height:200px;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 767.98px){
+    body #sitio-web {
+        .confia-gerencial {
+            .bloque-informacion {
+                margin-left: 0;
+            }
+            .central {
+                background-image:url(../images/confia_gerencial_movil.jpg);
+                background-repeat: no-repeat;
+                background-color: darken(#005e9a,10%);
+                background-position: right top;
+                background-size:contain;
+                height:auto;
+                padding-top:420px;
+                .contenido-central {
+                    position: static;
+                    padding:20px;;
+                    background-color: #fff;
+                    background-position: right top;
+                    min-height:auto;
+                    height: auto;
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 575.98px) {
+    body #sitio-web {
+        .confia-gerencial {
+            .central {
+                background-size:cover;
+                .contenido-central {
+                    min-height: auto;
+                    padding:20px;
+                }
+            }
+        }
+    }
+}
